@@ -15,7 +15,7 @@
 
 
 ## Updates
-- [07/25] We release [Mr. DETR++](https://arxiv.org/pdf/2412.10028v4), a stronger MoE model, supporting Object Detection, Instance Segmentation, and Panoptic Segmentation.
+- [07/25] We release 🚀[Mr. DETR++](https://arxiv.org/pdf/2412.10028v4), a stronger MoE model, supporting Object Detection, Instance Segmentation, and Panoptic Segmentation.
 - [04/25] We release 🤗[Online Demo](https://huggingface.co/spaces/allencbzhang/Mr.DETR) of Mr. DETR.
 - [04/25] Mr. DETR supports Instance segmentation now. We release the code and pre-trained weights.
 - [03/25] We release the code and weights of Mr. DETR for object detection. You may find pre-trained weights at [Huggingface](https://huggingface.co/allencbzhang/Mr.DETR/tree/main).
@@ -33,6 +33,7 @@
 ## Model Zoo
 | Model |   | Backbone | Query | Epochs | AP | AP<sub>50</sub> | AP<sub>75</sub> | AP<sub>s</sub> | AP<sub>m</sub> | AP<sub>l</sub> |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Mr. DETR++ Align | [Config](configs/dino-swin/dino_swin_large_384_4scale_12ep.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/blob/main/MrDETR_pp_align_swinL_12ep_900q.pth) | Swin-L | 900 | 12 | 58.7 | |  | |  |  |
 | Mr. DETR-Deformable |  [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus_300q.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_12ep_300q.pth) | R50 | 300 | 12 | 49.5 | 67.0 | 53.7 | 32.1 | 52.5 | 64.7 |
 | Mr. DETR-Deformable | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformbale_r50_12ep_900q.pth) | R50 | 900 | 12 | 50.7 | 68.2 | 55.4 | 33.6 | 54.3 | 64.6 | 
 | Mr. DETR-Deformable | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_24ep_900q.pth) | R50 | 900 | 24 | 51.4 | 69.0 | 56.2 | 34.9 | 54.8 | 66.0 |
